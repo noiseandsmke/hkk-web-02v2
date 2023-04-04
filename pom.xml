@@ -9,29 +9,16 @@
   <build>
     <plugins>
       <plugin>
-		<groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-			<source>1.8</source>
-			<target>1.8</target>
+          <release>17</release>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
       </plugin>
-		<plugin>
-      <groupId>com.microsoft.azure</groupId>
-      <artifactId>azure-webapp-maven-plugin</artifactId>
-      <version>2.9.0</version>
-      <configuration>
-		<resourceGroup>javaProDev</resourceGroup>
-        <appName>hkk-web-02-v1</appName>
-        <region>Southeast Asia</region>
-        <pricingTier>F1</pricingTier>
-      </configuration>
-    </plugin>
     </plugins>
   </build>
   
